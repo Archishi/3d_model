@@ -1,0 +1,10 @@
+﻿@model Domain.Entity.Order
+<h2>Order Details</h2>
+<p>ID: @Model.Id</p>
+<p>User ID: @Model.UserId</p>
+<p>Final Sum: @Model.Final_sum</p>
+<p>Status: @Model.Status_orders</p>
+<p>Order Date: @Model.Date_order</p>
+<p>End Date: @Model.Date_end</p>
+<a href="@Url.Action("Index")">Back to List</a>
+
