@@ -3,6 +3,7 @@ using Domain.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using Infrastructure.Data;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace YourNamespace.Controllers
 {
@@ -28,6 +29,7 @@ namespace YourNamespace.Controllers
 
         public IActionResult Create()
         {
+            ViewBag.Users=new SelectList(_context.Users.ToList(), "Id", "Name");
             return View();
         }
 

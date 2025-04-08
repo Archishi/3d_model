@@ -2,7 +2,7 @@
 <h2>Create Order</h2>
 <form asp-action="Create" method="post">
     <label>User ID:</label>
-    <input asp-for="UserId" required />
+    <select asp-for="UserId" asp-items="ViewBag.Users" required> </select>
     <label>Final Sum:</label>
     <input asp-for="Final_sum" required />
     <label>Status:</label>
